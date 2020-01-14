@@ -1,0 +1,147 @@
+% !TEX TS-program = PDfLaTeX
+% !TEX encoding = UTF-8
+%%
+%% AUTORZY szablonu - proszę nie kasować tego komentarza
+%Wykonali: Klaudia Olszewska, Natalia Smolińska, Oleksandra Koval, Krzysztof Bielas
+%%
+\documentclass[12pt,a4paper,oneside]{mwrep}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[polish]{babel}
+\usepackage[unicode]{hyperref}	
+
+\setlength{\parindent}{4pt}
+\setlength{\parskip}{1ex plus 0.5ex minus 0.2ex}
+
+					%W poniższych komentarzach (oznaczonych czerwonym kolorem) znajdują się instrukcje według,
+                 					%których należy postępować. Sprowadzają się do wpisywania prostych danych.	
+                     				%W nawiasy klamrowe są już wpisane przykładowe dane, które należy zmienić według własnego
+\frenchspacing						%uznania.
+\usepackage{indentfirst}										%POZOSTAŁEGO KODU NIE NALEŻY ZMIENIAĆ
+\usepackage{graphicx, color}
+\usepackage{tabularx}
+\usepackage{colortbl}	
+\usepackage[abs]{overpic}
+\usepackage{xcolor,varwidth}
+\usepackage{multirow}
+\usepackage{caption}	
+\usepackage[final]{pdfpages}
+\usepackage{lipsum}
+\usepackage{url}
+\usepackage{float}
+
+
+
+%%\usepackage{bookman}              %%  chcąc zmienić font, odkomentuj ta linię
+\newcommand{\linia}{\rule{\linewidth}{0.5mm}}	
+\makeatletter
+\usepackage[top=2cm, bottom=2cm, left=3cm, right=2cm]{geometry}		
+\renewcommand{\maketitle}{\begin{titlepage}
+
+	\begin{center}
+\huge{\textbf{WYŻSZA SZKOŁA ZARZĄDZANIA \\ ,,EDUKACJA"}}\\[2mm]
+	\large {Wydział Zarządzania}\\
+	\large {Kierunek:}
+	\large												%W poniższy nawias klamrowy wpisz małym literami NAZWĘ KIERUNKU
+	 															{informatyka}	
+	\end{center}
+	\vspace*{3cm}	
+	\begin{center}
+		\begin{minipage}{8cm}\textbf{}
+		\centering
+		\textit{}\\
+		\Large \textsc{\@author} \\
+		\Large {\textsc {Numer albumu:}
+		\textsc										%W poniższy nawias klamrowy wpisz NUMER ALBUMU
+																{24783}
+		}
+		\end{minipage}
+	\end{center}
+	\vspace{2cm}
+	\begin{center}	
+			\huge
+		 	\MakeUppercase{\textbf{\textsc{\@title}}}\\
+			\vspace*{0.2cm}
+			\large \textbf {Praca} 		
+			\MakeLowercase{\large \textbf						%W poniższy nawias klamrowy wpisz  co to jest za praca.
+																{Inżynierska}
+			}													
+	\end{center}
+				
+	\vspace{3cm}	
+	\begin{flushright}
+	\begin{minipage}{8cm}
+		\begin{flushleft}
+		{\large Praca napisana \\ pod kierunkiem naukowym:}\\
+		\vspace{0.3cm}
+		\Large											%W poniższy nawias klamrowy wpisz tytuł,imię i nazwisko promotora.
+																{dr inż. Piotr Grobelny}
+		\end{flushleft}
+	\end{minipage}	
+	\end{flushright}
+	\vspace*{\stretch{10}}
+	\begin{center}
+		%%\today
+Wrocław 2019
+	\end{center}	
+\end{titlepage} %
+}
+\makeatother	
+\author												%W poniższy nawias klamrowy wpisz imię i nazwisko autora.
+																{Grzegorz Dzikowicki}
+																
+																
+\title 													%W poniższy nawias klamrowy wpisz temat pracy.
+														{Projekt gry komputerowej z wykorzystaniem silnika Unity}
+%%
+%%%%Rozdziały biegnące ciurkiem%%%%zakomentuj poniższe linie, jesli chcesz, aby rozdziały zaczynały się od nowej strony%%%%%
+\SetSectionFormatting{chapter}
+{48pt plus5pt minus2pt}
+{\FormatHangHeading{\Large}}
+{24pt plus3pt}
+%%%%%%%%%%%%%%%%%%%Koniec macra Rozdziały biegnące ciurkiem%%%%%%%%%%%%%%%%%%%%%%%
+%%
+%%definicje własnych kolorów
+\definecolor{kolor}{cmyk}{0.15,0.78,1,0.04}
+\definecolor{kolor2}{cmyk}{0.15,0.78,1,0.09}
+%%
+
+\pretolerance=1000  %%% globalne ustawienie dzielenia wyrazów na końcu linii; wyższa wartość 'zabrania' dzielenia
+
+\newenvironment{Table}
+{\par\medskip\noindent\minipage{\linewidth}}
+{\endminipage\par\medskip}
+%%
+\begin{document}
+\maketitle
+\baselineskip=19pt  %%%% odstępy międzywierszowe
+%%
+\tableofcontents
+\newpage
+\setcounter{page}{2}
+\normalsize\rmfamily
+\baselineskip24pt
+\input{wstep.tex}
+%\input{przeg_lit.tex}
+\input{tezy.tex}
+\input{projekt.tex}
+\input{metodyka.tex}
+%\input{wyniki.tex}
+%\input{podsumowanie.tex}
+\input{wnioski.tex}
+
+\renewcommand{\bibname}{Spis literatury}
+\nocite{*}
+\bibliographystyle{unsrt}
+\bibliography{biblio}
+%\begin{quote}
+%\scriptsize{
+%\underline{\textcolor{blue}{Objaśnienie:}}\\[1mm]
+%\textcolor{blue}{{\textbf{Literatura}:} (lista wszystkich przywołań i odwołań)}\\[1mm]
+%\textcolor{blue}{
+%Spis literatury, tzw. \emph{Bibliografia} powinna zawierać ponumerowany  wykaz - cytowanych w pracy, \textbf{w kolejności cytowania} - publikacji zwartych (książek), materiałów %konferencyjnych, artykułów w czasopismach naukowych, popularnonaukowych, źródeł elektronicznych (np. internetowych) itp. Stosować biblioteczną bazę danych BiB\TeX a oraz styl %cpm.bst.
+%}}
+%\end{quote}
+\input{zalaczniki.tex}
+%%
+\end{document}
