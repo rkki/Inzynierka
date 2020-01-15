@@ -10,11 +10,11 @@
 \contentsline {section}{\numberline {2.1\relax .\kern .5em }Blender}{4}{section.2.1}
 \contentsline {section}{\numberline {2.2\relax .\kern .5em }Styl grafiki -- Low-poly}{5}{section.2.2}
 \contentsline {section}{\numberline {2.3\relax .\kern .5em }Unity}{6}{section.2.3}
-\contentsline {chapter}{\numberline {3\relax .\kern .5em }Metoda zrealizowania pracy}{6}{chapter.3}
+\contentsline {chapter}{\numberline {3\relax .\kern .5em }Metoda zrealizowania pracy}{7}{chapter.3}
 \contentsline {section}{\numberline {3.1\relax .\kern .5em }Narz\IeC {\k e}dzia badawcze}{7}{section.3.1}
 \contentsline {section}{\numberline {3.2\relax .\kern .5em }Technika tworzenia obiekt\IeC {\'o}w 3D}{7}{section.3.2}
 \contentsline {section}{\numberline {3.3\relax .\kern .5em }\IeC {\'S}rodowisko Unity}{8}{section.3.3}
 \contentsline {section}{\numberline {3.4\relax .\kern .5em }Programowanie skrypt\IeC {\'o}w}{9}{section.3.4}
-\contentsline {chapter}{\numberline {4\relax .\kern .5em }Wnioski}{11}{chapter.4}
-\contentsline {chapter}{Za\IeC {\l }\IeC {\k a}czniki}{12}{chapter*.3}
-\contentsline {section}{\numberline {4.1\relax .\kern .5em }Za\IeC {\l }. nr 1 O\IeC {\'s}wiadczenie}{12}{section.4.1}
+\contentsline {chapter}{\numberline {4\relax .\kern .5em }Wnioski}{13}{chapter.4}
+\contentsline {chapter}{Za\IeC {\l }\IeC {\k a}czniki}{14}{chapter*.3}
+\contentsline {section}{\numberline {4.1\relax .\kern .5em }Za\IeC {\l }. nr 1 O\IeC {\'s}wiadczenie}{14}{section.4.1}
