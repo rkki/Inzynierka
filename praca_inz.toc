@@ -7,14 +7,15 @@
 \contentsline {section}{\numberline {1.4\relax .\kern .5em }Zakres}{3}{section.1.4}
 \contentsline {section}{\numberline {1.5\relax .\kern .5em }Teza pracy}{3}{section.1.5}
 \contentsline {chapter}{\numberline {2\relax .\kern .5em }Badania w\IeC {\l }asne}{4}{chapter.2}
-\contentsline {section}{\numberline {2.1\relax .\kern .5em }Blender}{4}{section.2.1}
+\contentsline {section}{\numberline {2.1\relax .\kern .5em }Blender}{5}{section.2.1}
 \contentsline {section}{\numberline {2.2\relax .\kern .5em }Styl grafiki -- Low-poly}{5}{section.2.2}
 \contentsline {section}{\numberline {2.3\relax .\kern .5em }Unity}{6}{section.2.3}
 \contentsline {chapter}{\numberline {3\relax .\kern .5em }Metoda zrealizowania pracy}{7}{chapter.3}
 \contentsline {section}{\numberline {3.1\relax .\kern .5em }Narz\IeC {\k e}dzia badawcze}{7}{section.3.1}
 \contentsline {section}{\numberline {3.2\relax .\kern .5em }Technika tworzenia obiekt\IeC {\'o}w 3D}{7}{section.3.2}
-\contentsline {section}{\numberline {3.3\relax .\kern .5em }\IeC {\'S}rodowisko Unity}{8}{section.3.3}
-\contentsline {section}{\numberline {3.4\relax .\kern .5em }Programowanie skrypt\IeC {\'o}w}{9}{section.3.4}
-\contentsline {chapter}{\numberline {4\relax .\kern .5em }Wnioski}{13}{chapter.4}
-\contentsline {chapter}{Za\IeC {\l }\IeC {\k a}czniki}{14}{chapter*.3}
-\contentsline {section}{\numberline {4.1\relax .\kern .5em }Za\IeC {\l }. nr 1 O\IeC {\'s}wiadczenie}{14}{section.4.1}
+\contentsline {section}{\numberline {3.3\relax .\kern .5em }\IeC {\'S}rodowisko Unity}{9}{section.3.3}
+\contentsline {section}{\numberline {3.4\relax .\kern .5em }Programowanie skrypt\IeC {\'o}w}{10}{section.3.4}
+\contentsline {chapter}{\numberline {4\relax .\kern .5em }Podsumowanie}{15}{chapter.4}
+\contentsline {chapter}{\numberline {5\relax .\kern .5em }Wnioski}{16}{chapter.5}
+\contentsline {chapter}{Za\IeC {\l }\IeC {\k a}czniki}{16}{chapter*.3}
+\contentsline {section}{\numberline {5.1\relax .\kern .5em }Za\IeC {\l }. nr 1 O\IeC {\'s}wiadczenie}{16}{section.5.1}

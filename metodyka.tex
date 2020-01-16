@@ -21,17 +21,17 @@ W późniejszym stadium rozwoju danego elementu, powstaje tzw. szkic końcowy. W
 
 \indent Tworząc obiekt zazwyczaj zaczyna się od zwykłej kostki sześciennej, którą następnie modyfikuje się, poprzez przesuwanie vertexów, krawędzi bądź całych ścian obiektu. Istnieje wiele narzędzi w Blenderze, które pomagają uzyskać porządany przez nas efekt takie jak Mirror. Dodając ten modyfikator na obiekt, otrzymujemy odbicie lustrzane ukazujące dwie identyczne połówki. Korzystając ze zdjęcia referencyjnego ustawionego w widoku side view (bocznym) możemy ustawiać krawędzie obiektu nadając mu identyczny kształt jak na zdjęciu. Samochód który będzie głównym pojazdem w projekcie został stworzony za pomocą zdjęcia poglądowego Poloneza oraz własnej wyobraźni, ponieważ jego proporcje oraz kształt są niczym wyjęte z kreskówki. Obiekty stworzone w Blenderze, zostały wyeksportowane jako plik typu fbx.
 
-\begin{figure}[!h]
-\setcaptionwidth{0.5\linewidth}
+\begin{figure}[!hbt]
+\setcaptionwidth{0.75\linewidth}
 \centering
-  \includegraphics[width=0.5\linewidth]{carblend.png}
+  \includegraphics[width=0.65\linewidth]{carblend.png}
   \caption{Render samochodu stworzonego na potrzeby projektu}\label{rys_2}
-  \begin{minipage}[t]{0.5\linewidth}
+  \begin{minipage}[t]{0.75\linewidth}
     \emph{Źródło: Opracowanie własne}
   \end{minipage}
 \end{figure}
 
-
+\newpage
 \section{Środowisko Unity}
 \indent Po wcześniejszym stworzeniu obiektów w Blenderze, przeszedłem do tworzenia środowiska w Unity. Aby obiekty nie wisiały w powietrzu, została stworzona płaska powierzchnia o rozmiarach 15x3x1000 jednostek Unity. Następnie umieszczono wszystkie obiekty w scenie. Każdy z obiektów posiada komponenty Mesh Collider, który odpowiada za wykrywanie kolizji z innymi obiektami, oraz Rigidbody będący głównym elementem fizyki obiektów.  Zostały zmodyfikowane ich masy oraz rozmiary aby stworzyć dla nich "prefab". Prefabem nazywany jest ten sam obiekt, jednakże po ponownym umieszczeniu go w scenie posiada te same właściwości. Ustawiając obiekty na powierzchni, stworzono 5 różnych poziomów, które różnią się trudnością, odpowiednio od pierwszego do piątego, bardziej skomplikowane ułożenie przeszkód oraz ich ilość. 
 
@@ -40,21 +40,21 @@ W późniejszym stadium rozwoju danego elementu, powstaje tzw. szkic końcowy. W
 \begin{figure}[!h]
 \setcaptionwidth{0.75\linewidth}
 \centering
-  \includegraphics[width=0.75\linewidth]{levelcomplete2.png}
+  \includegraphics[width=0.80\linewidth]{levelcomplete2.png}
   \caption{Screenshot pokazujący LEVEL COMPLETE, poniżej oś czasu z kluczowymi klatkami tworzącymi animację.}\label{rys_3}
   \begin{minipage}[t]{0.75\linewidth}
     \emph{Źródło: Opracowanie własne}
   \end{minipage}
 \end{figure}
 
-
+\newpage
 \section{Programowanie skryptów}
 \indent Programowanie zaczęto od stworzenia skryptu obsługującego poruszanie się pojazdem. Aby obiekt się poruszał, wykorzystano komponent Rigidbody umieszczony na samochodzie. Korzystając z gotowych funkcji zawartch w Rigidbody, mianowicie \textit{AddForce()}, można sprawić aby obiekt poruszał się w danym kierunku z określoną mocą.
 
 \begin{figure}[!h]
 \setcaptionwidth{0.75\linewidth}
 \centering
-  \includegraphics[width=0.75\linewidth]{playermove.png}
+  \includegraphics[width=1\linewidth]{playermove.png}
   \caption{Skrypt PlayerMovement obsługujący poruszanie się pojazdu po poziomie.}\label{rys_4}
   \begin{minipage}[t]{0.75\linewidth}
     \emph{Źródło: Opracowanie własne}
@@ -64,7 +64,7 @@ W późniejszym stadium rozwoju danego elementu, powstaje tzw. szkic końcowy. W
 \begin{figure}[!h]
 \setcaptionwidth{0.75\linewidth}
 \centering
-  \includegraphics[width=0.75\linewidth]{playermovelook.png}
+  \includegraphics[width=1\linewidth]{playermovelook.png}
   \caption{Zdjęcie ukazujące pojazd, który zboczył ze środka trasy.}\label{rys_5}
   \begin{minipage}[t]{0.75\linewidth}
     \emph{Źródło: Opracowanie własne}
@@ -72,7 +72,7 @@ W późniejszym stadium rozwoju danego elementu, powstaje tzw. szkic końcowy. W
 \end{figure}
 
 \newpage
-\indent Kamera musi śledzić gracza, dlatego napisano skrypt, który ustala pozycję kamery w świecie gry, na taką samą pozycję co pojazd, jednakże dodany jest offset, który podnosi kamerę do góry i przesuwa ją do tyłu, tak aby widok był z perspektywy trzeciej osoby.
+\indent Kamera musi śledzić gracza, dlatego napisano skrypt, który ustala pozycję kamery w świecie gry, na taką samą pozycję co pojazd, jednakże dodany jest offset czyli przesunięcie, które podnosi kamerę do góry i przesuwa ją do tyłu, tak aby widok był z perspektywy trzeciej osoby.
 
 \begin{figure}[!h]
 \setcaptionwidth{0.75\linewidth}
@@ -84,31 +84,33 @@ W późniejszym stadium rozwoju danego elementu, powstaje tzw. szkic końcowy. W
   \end{minipage}
 \end{figure}
 
-\indent Kolejnym zadaniem było napisanie skryptu, który będzie wykrywał kolizje z przeszkodami oraz resetował poziom, jeżeli pojazd spadnie z planszy. Ponieważ platforma po której porusza się pojazd, również jest wykrywana jako kolizja, wszystkie przeszkody zostały otagowane jako Obstacle. W skrypcie PlayerMovement został dodany kod obsługujący resetowanie poziomu, jeżeli wartość y pojazdu spadnie poniżej -1, który odwołuje się do funkcji EndGame w skrypcie GameManager.
+\newpage
+\indent Kolejnym zadaniem było napisanie skryptu, który będzie wykrywał kolizje z przeszkodami oraz resetował poziom, jeżeli pojazd spadnie z planszy. Ponieważ platforma po której porusza się pojazd, również jest wykrywana jako kolizja, wszystkie przeszkody zostały otagowane jako ,,Obstacle''. W skrypcie PlayerMovement został dodany kod obsługujący resetowanie poziomu, jeżeli wartość y pojazdu spadnie poniżej -1, który odwołuje się do funkcji \textit{EndGame()} w skrypcie GameManager.
 
 \begin{figure}[!hbt]
 \setcaptionwidth{0.75\linewidth}
 \centering
-  \includegraphics[width=0.75\linewidth]{playercollision.png}
+  \includegraphics[width=1\linewidth]{playercollision.png}
   \caption{Skrypt PlayerCollision obsługujący kolizje pomiędzy pojazdem a przeszkodami.}\label{rys_7}
   \begin{minipage}[t]{0.75\linewidth}
     \emph{Źródło: Opracowanie własne}
   \end{minipage}
 \end{figure}
 %%
-\begin{figure}[!ht]
+\begin{figure}[!hbt]
 \setcaptionwidth{0.75\linewidth}
 \centering
-  \includegraphics[width=0.75\linewidth]{gamemanager.png}
+  \includegraphics[width=1\linewidth]{gamemanager.png}
   \caption{Skrypt GameManager zajmujący się restowaniem poziomów.}\label{rys_8}
   \begin{minipage}[t]{0.75\linewidth}
     \emph{Źródło: Opracowanie własne}
   \end{minipage}
 \end{figure}
 
-\indent Ponieważ w inspektorze nie da się podpiąć skryptu GameManager do prefabu pojazdu, w skrypcie PlayerCollision znajduje się metoda FindObjectOfType która przeszukuje w lokalizacji skryptów plik o nazwie GameManager a następnie korzysta z jego funkcji która musi być ustawiona jako public. Tworząc boola gameHasEnded, którego wartość zmieniana jest przy pierwszym uruchomieniu funkcji, upewniamy się, że funkcja będzie ładowana tylko jeden raz. Następnie po upadku, bądź kolizji, poziom jest ładowany od nowa, tak więc gameHasEnded ma swoją pierwotną wartość. Aby gra nie resetowała się za szybko, zamiast uruchamiać funkcję EndGame od razu, wykorzystałem metodę Invoke która po dodaniu nazwy funkcji, oraz czasu w sekundach, uruchamia funkcję po chwili. Aby przejść na następny poziom, musimy przejechać pomiędzy przeszkodami tak żeby ich nie dotknąć. W przypadku porażki poziom zostanie załadowany od nowa.
+\newpage
+\indent Ponieważ w inspektorze nie da się podpiąć skryptu GameManager do prefabu pojazdu, w skrypcie PlayerCollision znajduje się metoda \textit{FindObjectOfType} która przeszukuje w lokalizacji skryptów plik o nazwie GameManager a następnie korzysta z jego funkcji która musi być ustawiona jako publiczna. Stworzono typ logiczny bool gameHasEnded, który przybiera dwie wartości, dodatnią lub ujemną, którego wartość zmieniana jest przy pierwszym uruchomieniu funkcji, aby upewnić się, że funkcja będzie ładowana tylko jeden raz. Następnie po upadku, bądź kolizji, poziom jest ładowany od nowa, tak więc gameHasEnded ma swoją pierwotną wartość. Aby gra nie resetowała się za szybko, zamiast uruchamiać funkcję \textit{EndGame()} od razu, wykorzystałem metodę \textit{Invoke} która po dodaniu nazwy funkcji, oraz czasu w sekundach, uruchamia funkcję po określonym czasie. Aby przejść na następny poziom, gracz musi przejechać pomiędzy przeszkodami tak żeby ich nie dotknąć. W przypadku porażki poziom zostanie załadowany od nowa.
 
-\indent Poziom jest już możliwy do przejścia, jednakże trzeba załadować kolejny. Na końcu trasy każdego z poziomów umieściłem kostkę o szerokości 15 jednostek Unity, która jest niewidoczna i służy jako Trigger, który uruchamia animację zakończonego poziomu, oraz ładuje kolejny. W skrypcie EndTrigger znajduje się jedna funkcja OnTriggerEnter(), która ładuje funkcję CompleteLevel() ze skryptu GameManager odpowiedzialną za włączenie animacji zakończenia poziomu.
+\indent Poziom jest już możliwy do przejścia, jednakże trzeba załadować kolejny. Na końcu trasy każdego z poziomów umieszczono kostkę o szerokości 15 jednostek Unity, która jest niewidoczna i służy jako przełącznik, który uruchamia animację zakończonego poziomu, oraz ładuje kolejny. W skrypcie EndTrigger znajduje się jedna funkcja \textit{OnTriggerEnter()}, która ładuje funkcję \textit{CompleteLevel()} ze skryptu GameManager odpowiedzialną za włączenie animacji zakończenia poziomu.
 
 \begin{figure}[!ht]
 \setcaptionwidth{0.75\linewidth}
@@ -120,10 +122,10 @@ W późniejszym stadium rozwoju danego elementu, powstaje tzw. szkic końcowy. W
   \end{minipage}
 \end{figure}
 
-\begin{figure}[!ht]
+\begin{figure}[!h]
 \setcaptionwidth{0.75\linewidth}
 \centering
-  \includegraphics[width=0.75\linewidth]{loadlevel.png}
+  \includegraphics[width=1\linewidth]{loadlevel.png}
   \caption{Skrypt LevelComplete ładujący kolejny poziom.}\label{rys_10}
   \begin{minipage}[t]{0.75\linewidth}
     \emph{Źródło: Opracowanie własne}
