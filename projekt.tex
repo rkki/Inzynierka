@@ -1,5 +1,6 @@
 %%
 \chapter{Badania własne}
+\begin{quotation}
 \indent Proces badawczy to proces planowego, celowego wykorzystania uzyskanych informacji oraz własnej wiedzy. Celem głównym pracy jest próba stworzenia projektu świata przedstawionego w stylu graficznym low-poly. Głównym problemem jest rozmiar gry i złożoność poziomów. Zadecydowano więc, że projekt będzie przedstawiał pięć poziomów, w których gracz musi omijać przeszkody aby przejść na poziom wyżej.
 
 \indent Pierwsza gra, która posiadała ,,prawdziwe'' 3D, Descent ukazałą się w 1995r i została stworzona przez wydawcę gier Interplay Entertainment. Grafikę skonstruowano z poligonów i jako jedna z niewielu gier tamtych czasów pozwalała na sześć stopni swobody, czyli możliwość poruszania się postacią w każdą możliwą stronę horyzontalnie i wertykalnie.
@@ -11,11 +12,12 @@
 \indent Nawzajem z każdą aktualizacją, obydwa silniki były rozwijane w taki sposób, aby udowodnić że są lepsze i mają więcej możliwości.
 %%
 \section{Blender}
-\indent Rozpoczynając pracę związaną z tworzeniem grafiki 3D, postanowiłem dowiedzieć się o możliwych programach do właśnie takich zadań. Z pośród najbardziej popularnych można wymienić Blendera, Autodesk Maya, Houdini oraz ZBrush. Jednym z kryteriów wyboru była cena zakupu programu. Oczywistym wyborem jest Blender, ponieważ jest on darmowym oprogramowaniem oraz posiada większość opcji z ww. programów. Modele wykorzystane w projekcie muszą być stworzone w stylu low-poly, oznacza to, że wymagania co do złożoności siatki obiektu pod względem topologii nie są wygórowane, wręcz muszą być zaniżone. 
+
+\indent Rozpoczynając pracę związaną z tworzeniem grafiki 3D, postanowiłem dowiedzieć się o możliwych programach do właśnie takich zadań. Z pośród najbardziej popularnych można wymienić Blendera, Autodesk Maya, Houdini oraz ZBrush. Jednym z kryteriów wyboru była cena zakupu programu. Oczywistym wyborem jest Blender, ponieważ jest on darmowym oprogramowaniem oraz posiada większość opcji z ww. programów. Modele wykorzystane w projekcie muszą być stworzone w stylu low-poly, oznacza to, że wymagania co do złożoności siatki obiektu pod względem topologii nie są wygórowane, wręcz muszą być zaniżone. Korzystając z Blendera, z łatwością można zapamiętać skrótów klawiszowych, które są bardzo intuicyjne, a najważniesze skróty są rozmieszczone w okolicach lewej strony klawiatury. 
 %%
 \section{Styl grafiki -- Low-poly}
 
-\indent Low-poly jest określeniem siatki modelu 3D, który charakteryzuje się małą ilością wielokątów popularnie zwanych poligonami. Na przestrzeni lat, patrząc na początki gier komputerowych, dzisiejsze miano low-poly róźnie się diametralnie od swoich poprzedników z przed dwóch dekad, ze względu na o wiele większą ilość poligonów oraz technologię dzięki której tworzenie modeli 3D jest o wiele łatwiejsze, jednakże dalej odbiega od modeli które są nastawione na realizm. Wówczas obiekt zachowuje znajomą nam geometrię. Poligony teoretycznie mogą posiadać nieskończoną ilość boków, jednakże silniki renderowania grafiki często napotykają problem z poligonami, których ilość boków jest większą od pięciu, zwłaszcza przy animacjach. Nieoficjalnie ustalono, że siatka modelu musi składać się z trójkątów, bądź prostokątów. Aby obiekt w stylu low-poly posiadał detale prawdziwego obiektu, używa się map normalnych i map wypukłości, które cieniują poligony i dodają im dodatkowej geometrii, aby posiadały detale, których ze względu na rozmiar siatki obiektu, nie da się uwzględnić ręcznie. 
+\indent Low-poly jest określeniem siatki modelu 3D, który charakteryzuje się małą ilością wielokątów popularnie zwanych poligonami. Poligony są wykorzystywane do tworzenia obiektów 3D. Siatka modelu tworzona jest poprzez łączenie poligonów w jedną spójną całość. Na przestrzeni lat, patrząc na początki gier komputerowych, dzisiejsze miano low-poly róźnie się diametralnie od swoich poprzedników z przed dwóch dekad, ze względu na o wiele większą ilość poligonów oraz technologię dzięki której tworzenie modeli 3D jest o wiele łatwiejsze, jednakże dalej odbiega od modeli które są nastawione na realizm. Wówczas obiekt zachowuje znajomą nam geometrię. Poligony teoretycznie mogą posiadać nieskończoną ilość boków, jednakże silniki renderowania grafiki często napotykają problem z poligonami, których ilość boków jest większą od pięciu, zwłaszcza przy animacjach ukazujących obiekt w ruchu. Nieoficjalnie ustalono, że siatka modelu musi składać się z trójkątów, bądź prostokątów. Aby obiekt w stylu low-poly posiadał detale prawdziwego obiektu, używa się map normalnych i map wypukłości, które cieniują poligony i dodają im dodatkowej geometrii, aby posiadały detale, których ze względu na rozmiar ilość poligonów w siatce obiektu, nie da się uwzględnić ręcznie. 
 
 %%
 
@@ -30,13 +32,11 @@
 \end{figure}
 
 %%
-
-\indent Rozwój technologii silników gier przedstawił nowe rozwiązania dla obiektów low-poly. Odkąd silniki oraz technologia obliczeniowa procesorów rozwinęła się w wielkim stopniu, obecne obliczenia są w stanie przedstawić setki tysięcy poligonów w standardowych 25 klatkach. 
 \newpage
-W produkcjach AAA low-poly  dalej istnieje, jednakże zostało ograniczone do wykorzystywania mniej detalicznych modeli jako forma zmniejszenia jakości oddalonych obiektów. LOD czyli Level Of Detail, definiuje zasięg z jakim dany obiekt posiada jakość detali. Im dalej znajduje się obiekt, tym gorsze odwzorowanie detali, jednakże nie pobiera tak dużo mocy obliczeniowej w przypadku głównej sceny w pobliżu postaci głównej. \cite{1}
+\indent Rozwój technologii silników gier przedstawił nowe rozwiązania dla obiektów low-poly. Odkąd silniki oraz technologia obliczeniowa procesorów rozwinęła się w wielkim stopniu, obecne obliczenia są w stanie przedstawić setki tysięcy poligonów w standardowych 25 klatkach. 
+W produkcjach AAA low-poly dalej istnieje, jednakże zostało ograniczone do wykorzystywania mniej detalicznych modeli jako forma zmniejszenia jakości oddalonych obiektów. LOD czyli Level Of Detail, definiuje zasięg z jakim dany obiekt posiada jakość detali. Im dalej znajduje się obiekt, tym gorsze odwzorowanie są detali, jednakże nie pobiera tak dużo mocy obliczeniowej w przypadku głównej sceny w pobliżu postaci głównej, przez co gra działą płynnie. \cite{1}
 
-\indent W przypadku kiedy twórca zdecycował, że chce użyć stylu low-poly, nie ma powodu, żeby używać LODa, ponieważ modele 3D w stylu low-poly zawierają wystarczającą liczbę detali jak i nie wymagają wielkiej mocy mocy obliczeniowej.
-
+\indent W przypadku kiedy twórca zdecycował, że chce użyć stylu low-poly, nie ma powodu, żeby używać LODa, ponieważ modele 3D w tym stylu zawierają wystarczającą liczbę detali jak i nie wymagają wielkiej mocy mocy obliczeniowej ze względu na małą liczbę krawędzi.
 
 \section{Unity}
 
@@ -44,4 +44,5 @@ W produkcjach AAA low-poly  dalej istnieje, jednakże zostało ograniczone do wy
 
 \indent Inspektor, czyli okno akcji każdego obiektu jak i całego projektu, pozwala modyfikować zmienne i dodawać nowe komponenty. Zaimportowany obiekt można dowolnie zmieniać, tj. dodać materiał, kiedy np. importowany obiekt był tylko siatką meshową. W przypadku kiedy w skrypcie zakodowano zmienną, której nadano przykładową wartość, twórca podczas testowania jest w stanie zmieniać jej wartość nie modyfikując kodu, również podczas procesu testowania, właśnie w Inspektorze. 
 
+\end{quotation}
 %%
