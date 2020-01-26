@@ -1,0 +1,34 @@
+\babel@toc {polish}{}
+\contentsline {chapter}{\numberline {1\relax .\kern .5em }Wst\IeC {\k e}p}{2}{chapter.1}
+\contentsline {chapter}{\numberline {2\relax .\kern .5em }Cel pracy, wymagania u\IeC {\.z}ytkownika, za\IeC {\l }o\IeC {\.z}enia, zakres i~tezy pracy}{4}{chapter.2}
+\contentsline {section}{\numberline {2.1\relax .\kern .5em }Cel pracy}{4}{section.2.1}
+\contentsline {section}{\numberline {2.2\relax .\kern .5em }Wymagania u\IeC {\.z}ytkownika}{4}{section.2.2}
+\contentsline {section}{\numberline {2.3\relax .\kern .5em }Za\IeC {\l }o\IeC {\.z}enia}{4}{section.2.3}
+\contentsline {section}{\numberline {2.4\relax .\kern .5em }Zakres}{4}{section.2.4}
+\contentsline {section}{\numberline {2.5\relax .\kern .5em }Teza pracy}{5}{section.2.5}
+\contentsline {chapter}{\numberline {3\relax .\kern .5em }Badania w\IeC {\l }asne}{6}{chapter.3}
+\contentsline {section}{\numberline {3.1\relax .\kern .5em }Program do modelowania 3D}{6}{section.3.1}
+\contentsline {section}{\numberline {3.2\relax .\kern .5em }Styl grafiki -- Low-poly}{9}{section.3.2}
+\contentsline {section}{\numberline {3.3\relax .\kern .5em }\IeC {\'S}rodowisko tworzenia gry}{13}{section.3.3}
+\contentsline {chapter}{\numberline {4\relax .\kern .5em }Metoda zrealizowania pracy}{16}{chapter.4}
+\contentsline {section}{\numberline {4.1\relax .\kern .5em }Narz\IeC {\k e}dzia badawcze}{16}{section.4.1}
+\contentsline {section}{\numberline {4.2\relax .\kern .5em }Technika tworzenia obiekt\IeC {\'o}w 3D}{16}{section.4.2}
+\contentsline {subsection}{\numberline {4.2.1\relax .\kern .5em }Oparcie na zdj\IeC {\k e}ciach referencyjnych}{16}{subsection.4.2.1}
+\contentsline {subsection}{\numberline {4.2.2\relax .\kern .5em }Modyfikatory obiekt\IeC {\'o}w}{19}{subsection.4.2.2}
+\contentsline {subsection}{\numberline {4.2.3\relax .\kern .5em }Wireframe czyli siatka meshowa}{22}{subsection.4.2.3}
+\contentsline {subsection}{\numberline {4.2.4\relax .\kern .5em }Tworzenie modelu 3D pojazdu}{23}{subsection.4.2.4}
+\contentsline {subsection}{\numberline {4.2.5\relax .\kern .5em }Tworzenie modelu 3D przeszk\IeC {\'o}d}{27}{subsection.4.2.5}
+\contentsline {section}{\numberline {4.3\relax .\kern .5em }\IeC {\'S}rodowisko Unity}{28}{section.4.3}
+\contentsline {subsection}{\numberline {4.3.1\relax .\kern .5em }Scenariusz rozgrywki}{29}{subsection.4.3.1}
+\contentsline {subsection}{\numberline {4.3.2\relax .\kern .5em }Materia\IeC {\l } po\IeC {\'s}lizgowy}{31}{subsection.4.3.2}
+\contentsline {subsection}{\numberline {4.3.3\relax .\kern .5em }Animacje}{32}{subsection.4.3.3}
+\contentsline {section}{\numberline {4.4\relax .\kern .5em }Programowanie skrypt\IeC {\'o}w}{33}{section.4.4}
+\contentsline {subsection}{\numberline {4.4.1\relax .\kern .5em }Poruszanie pojazdem}{33}{subsection.4.4.1}
+\contentsline {subsection}{\numberline {4.4.2\relax .\kern .5em }Obs\IeC {\l }uga kolizji}{36}{subsection.4.4.2}
+\contentsline {subsection}{\numberline {4.4.3\relax .\kern .5em }\IeC {\L }adowanie poziom\IeC {\'o}w}{39}{subsection.4.4.3}
+\contentsline {section}{\numberline {4.5\relax .\kern .5em }Przygotowanie gry do publikacji}{41}{section.4.5}
+\contentsline {chapter}{\numberline {5\relax .\kern .5em }Podsumowanie}{42}{chapter.5}
+\contentsline {chapter}{Spis rysunk\'ow}{45}{chapter*.2}
+\contentsline {chapter}{Za\IeC {\l }\IeC {\k a}czniki}{46}{chapter*.3}
+\contentsline {section}{Za\IeC {\l }. nr 1 O\IeC {\'s}wiadczenie dotycz\IeC {\k a}ce praw autorskich i danych osobowych przechowywanych w Systemie Antyplagiatowym}{46}{section*.4}
+\contentsline {section}{Za\IeC {\l }. nr 2 P\IeC {\l }yta CD}{46}{section*.5}
