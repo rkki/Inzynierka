@@ -2,7 +2,7 @@
 \chapter{Metoda zrealizowania pracy}
 \begin{quotation}
 %%
-\indent Realizacja pracy opiera się na opracowaniu kroków, które należy podjąć aby stworzyć świat gry w stylu low-poly. Aby zaprezentować stworzone elementy, został stworzony projekt gry komputerowej stworzonej w Unity.
+\indent Realizacja pracy opiera się na opracowaniu kroków, które należy podjąć aby stworzyć świat gry w stylu low-poly. Aby zaprezentować stworzone elementy, został stworzony projekt gry komputerowej w Unity.
 %%
 %%
 \section{Narzędzia badawcze}
@@ -23,7 +23,7 @@
 %%%%%%
 \subsection{Oparcie na zdjęciach referencyjnych}
 \indent Obiekty grafiki 3D o mianie low-poly określa się przedmioty, postacie, świat gry itp. na których widać wyraźne elementy trisów bądź poligonów. Są to wyraźnie zaznaczone krawędzie obiektu, które swoją geometrią przypominają odpowiednik w świecie rzeczywistym, które różnią się stopniem skomplikowania obiektu. Aby stworzyć taki model, najłatwiej jest zacząć od projektów poglądowych. W studiach gier, zatrudnieni sią artyści, którzy podczas omawiania aspektów danych postaci bądź elementów świata, rysują proste szkice, które następnie poprawiają w celu uwydatnienia kluczowych aspektów obiektu. 
-W późniejszym stadium rozwoju danego elementu, powstaje tzw. szkic końcowy. Wówczas owy szkic przekazuje się osobom, które zajmują się grafiką komputerową, aby stworzyli dany obiekt w środowisku 3D. Do projektu użyto zdjęć poglądowych dla pojazdu, beczki, oraz słupka drogowego.
+W późniejszym stadium rozwoju danego elementu, powstaje tzw. szkic końcowy. Wówczas owy szkic przekazuje się osobom, które zajmują się grafiką komputerową, aby stworzyli dany obiekt w środowisku 3D. Do projektu użyto zdjęć poglądowych dla beczki, pojazdu, oraz słupka drogowego.
 
 \begin{figure}[!hbt]
 \setcaptionwidth{1\linewidth}
@@ -64,7 +64,7 @@ W późniejszym stadium rozwoju danego elementu, powstaje tzw. szkic końcowy. W
 
 \newpage
 \subsection{Modyfikatory obiektów}
-\indent Istnieje wiele narzędzi w Blenderze, które pomagają uzyskać porządany przez nas efekt takie jak ,Mirror''. Uprzednio usuwając jedną połowę obiektu, dodając ten modyfikator na obiekt, otrzymuje się odbicie lustrzane ukazujące dwie identyczne połówki. Następnie modyfikując jedną stronę obiektu, ukazuje się identyczny wynik po drugiej stronie.
+\indent Istnieje wiele narzędzi w Blenderze, które pomagają uzyskać porządany przez nas efekt. Jednym z nich jest Mirror''. Uprzednio usuwając jedną połowę obiektu, dodając ten modyfikator na obiekt, otrzymuje się odbicie lustrzane ukazujące dwie identyczne połówki. Następnie modyfikując jedną stronę obiektu, ukazuje się identyczny wynik po drugiej stronie.
 
 \begin{figure}[!hbt]
 \setcaptionwidth{0.75\linewidth}
@@ -76,13 +76,11 @@ W późniejszym stadium rozwoju danego elementu, powstaje tzw. szkic końcowy. W
   \end{minipage}
 \end{figure}
 
-\newpage
-
-\indent Solidify służy do pogrubiania obiektów bez objętości. Płaskie elementy są pogrubiane dzięki czemu dalsze modyfikacje pozwalają uzyskać zupełnie inny wynik w przypadku płaskich obiektów.
+\indent Solidify służy do pogrubiania obiektów bez objętości. Płaskie elementy są pogrubiane dzięki czemu otrzymuje dodatkową geometrię, a dalsze modyfikacje pozwalają uzyskać zupełnie inny wynik w przypadku płaskich obiektów.
 \begin{figure}[!hbt]
 \setcaptionwidth{1\linewidth}
 \centering
-  \includegraphics[width=0.7\linewidth]{solidify.png}
+  \includegraphics[width=0.8\linewidth]{solidify.png}
   \caption{Na górze kwadrat bez modyfikatora. Na dole z modyfikatorem Solidify.}\label{rys_6}
   \begin{minipage}[t]{0.75\linewidth}
     \emph{Źródło: Opracowanie własne}
@@ -94,7 +92,7 @@ W późniejszym stadium rozwoju danego elementu, powstaje tzw. szkic końcowy. W
 \begin{figure}[!hbt]
 \setcaptionwidth{0.75\linewidth}
 \centering
-  \includegraphics[width=0.7\linewidth]{bevel.png}
+  \includegraphics[width=0.8\linewidth]{bevel.png}
   \caption{Przykładowe zastosowanie modyfikatora Bevel.}\label{rys_7}
   \begin{minipage}[t]{0.75\linewidth}
     \emph{Źródło: Opracowanie własne}
@@ -115,7 +113,7 @@ W późniejszym stadium rozwoju danego elementu, powstaje tzw. szkic końcowy. W
 \end{figure}
 
 \subsection{Wireframe czyli siatka meshowa}
-\indent Tworząc model który ma być wykonany w stylu low-poly, najważniejszym jest pierwsze spojrzenie. Obiekt o siatce złożonej tylko z poligonów wygląda gorzej niż obiekt składający się z trisów i poligonów. Jeżeli obiekt ma być animowany, dobrym pomysłem jest użycie modyfikatora ,,Triangulate''. Modyfikuje on siatkę meshową obiektu, przerabiając każdy poligon na dwa trisy zachowując przy tym geometrię obiektu. Podczas animowania obiektów, trisy zachowują się zdecydowanie lepiej od poligonów, które podczas np. przesuwania ręki, tworzą nienaturalne zagięcia. Ponieważ przeszkody jak i pojazd nie posiadają animacji obiekty dalej posiadają siatkę złożoną tylko z poligonów.
+\indent Tworząc model który ma być wykonany w stylu low-poly, najważniejszym jest pierwsze spojrzenie. Obiekt o siatce złożonej tylko z poligonów wygląda gorzej niż obiekt składający się z trisów i poligonów. Jeżeli obiekt ma być animowany, dobrym pomysłem jest użycie modyfikatora ,,Triangulate''. Modyfikuje on siatkę meshową obiektu, przerabiając każdy poligon na dwa trisy zachowując przy tym geometrię obiektu. Podczas animowania obiektów, trisy zachowują się zdecydowanie lepiej od poligonów, które podczas np. przesuwania ręki, tworzą nienaturalne zagięcia. Ponieważ przeszkody jak i pojazd nie posiadają animacji opona i słupek drogowy dalej posiadają siatkę złożoną tylko z poligonów.
 
 \begin{figure}[!hbt]
 \setcaptionwidth{1\linewidth}
@@ -129,7 +127,7 @@ W późniejszym stadium rozwoju danego elementu, powstaje tzw. szkic końcowy. W
 
 \newpage
 \subsection{Tworzenie modelu 3D pojazdu}
-\indent Tworząc obiekt zazwyczaj zaczyna się od zwykłej kostki sześciennej, którą następnie modyfikuje się poprzez przesuwanie vertexów, krawędzi bądź całych ścian obiektu. Blender posiada niesamowitą umiejętność łączenia funkcji. Przykładowo, korzystając ze skrótów klawiszowych, twórca jest w stanie wysuwać ścianę obiektu a następnie ją skalować nie przerywając wysuwania. \textbf{Pojazd} został stworzony korzystając ze zdjęcia poglądowego McLaren'a 570S ustawionego w widoku side view (bocznym) oraz własnej wyobraźni, aby uzyskać kształt przypominający bryłę tego samochodu. Za pomocą narzędzia Extrude dodano dodatkowe ściany, dzięki którym możliwym jest uzyskanie kształtu potrzebnej do odwzorowania modelu rzeczywistego. Jest to jedno z najważniejszych narzędzi, dzięki któremu jesteśmy w stanie uzyskać geometrię, która pozwoli stworzyć dokładniejszy obiekt, który będzie posiadał dodatkowe detale. Następnie można było ustawiać krawędzie obiektu nadając mu kształt przypominający ten na zdjęciu.
+\indent Tworząc obiekt zazwyczaj zaczyna się od zwykłej kostki sześciennej, którą następnie modyfikuje się poprzez przesuwanie vertexów, krawędzi bądź całych ścian obiektu. Blender posiada niesamowitą umiejętność łączenia funkcji. Przykładowo, korzystając ze skrótów klawiszowych, twórca jest w stanie wysuwać ścianę obiektu a następnie ją skalować nie przerywając wysuwania. \textbf{Pojazd} został stworzony korzystając ze zdjęcia poglądowego McLaren'a 570S ustawionego w widoku side view (bocznym) oraz własnej wyobraźni, aby uzyskać kształt przypominający bryłę tego samochodu. Za pomocą narzędzia Extrude dodano dodatkowe ściany, dzięki którym możliwym jest uzyskanie kształtu potrzebnego do odwzorowania modelu rzeczywistego. Jest to jedno z najważniejszych narzędzi, dzięki któremu jesteśmy w stanie uzyskać geometrię, która pozwoli stworzyć dokładniejszy obiekt, który będzie posiadał dodatkowe detale. Następnie można było ustawiać krawędzie obiektu nadając mu kształt przypominający ten na zdjęciu.
 
 \begin{figure}[!hbt]
 \setcaptionwidth{1\linewidth}
@@ -143,7 +141,7 @@ W późniejszym stadium rozwoju danego elementu, powstaje tzw. szkic końcowy. W
 
 %%%%%%
 \newpage
-\indent Ustawiając wszystkie krawędzie, aby pasowały do zdjęcia referencyjnego, umiejscowiono krawędzie siatki w taki sposób, aby możliwym było wysunięcie wszystkich ścian bocznych poza miejscem na koła. W ten sposób za pomocą narzędzia Extrude, uzyskano nadkola pojazdu. Następnym krokiem, było stworzenie koła. W środku nadkola, dodano Circle, czyli okrąg. Bazowo okrąg posiada 32 ściany, lecz zmiejszono ich liczbę do 16 za pomocą narzędzia dodawania okręgu. Następnie dopasowano go do rozmiaru opony, za pomocą narzędzia skalowania. Również przy pomocy narzędzia Extrude, stworzono walec bez ścian zamykających go. Przy pomocy Extrude, którego przesunięcie zostało anulowane poprzez prawy przycisk myszy, stworzono dwie linie, które są umieszczone na płaszczyźnie koła, które następnie zostały zeskalowane do centralnej linii opony, a następnie przy pomocy Extrude zmniejszono do rozmiarów środka koła i wysunięto na zewnątrz koła, aby uzyskać efekt prawdziwej felgi. 
+\indent Ustawiając wszystkie krawędzie, aby pasowały do zdjęcia referencyjnego, umiejscowiono krawędzie siatki w taki sposób, aby możliwym było wysunięcie wszystkich ścian bocznych poza miejscem na koła. W ten sposób za pomocą narzędzia Extrude, uzyskano nadkola pojazdu. Następnym krokiem, było stworzenie koła. W środku nadkola, dodano Circle, czyli okrąg. Bazowo okrąg posiada 32 ściany, lecz zmiejszono ich liczbę do 16 za pomocą narzędzia dodawania okręgu. Następnie dopasowano go do rozmiaru opony, za pomocą narzędzia skalowania. Również przy pomocy narzędzia Extrude, stworzono walec bez ścian zamykających go. Przy pomocy Extrude, którego przesunięcie zostało anulowane poprzez prawy przycisk myszy, stworzono dwie linie, które są umieszczone na płaszczyźnie koła. Następnie zostały one zeskalowane do centralnej linii opony, a przy pomocy Extrude zmniejszono do rozmiarów środka koła i wysunięto na zewnątrz, aby uzyskać efekt prawdziwej felgi. 
 
 \begin{figure}[!hbt]
 \setcaptionwidth{1\linewidth}
@@ -155,9 +153,9 @@ W późniejszym stadium rozwoju danego elementu, powstaje tzw. szkic końcowy. W
   \end{minipage}
 \end{figure}
 
-Wybierając co drugą ścianę felgi, uzyskano 8 elementów, które za pomocą Extrude, którego przesunięcie zostało anulowane oraz narzędzia skalowania dopasowano do środka felgi, aby imitowały połączenie z wystającym walcem. Aby uzyskać efekt takiego samego koła użyto modyfikatora Mirror, aby odbił obiekt na płaszczyźnie Y. Następnie koło z modyfikatorem Mirror, który nie jest jeszcze zaakceptowany, zduplikowano aby dodać koła na tylną część pojazdu.
+Wybierając co drugą ścianę felgi, uzyskano 8 elementów, a następnie za pomocą Extrude, którego przesunięcie zostało anulowane oraz narzędzia skalowania , dopasowano uzyskane ramiona do środka felgi, aby imitowały połączenie z wystającym walcem. Aby uzyskać efekt takiego samego koła po drugiej stronie pojazdu użyto modyfikatora Mirror, który odbił obiekt na płaszczyźnie Y. Następnie koło z modyfikatorem Mirror, który nie jest jeszcze zaakceptowany, zduplikowano aby dodać koła na tylną część pojazdu.
 
-\indent W każdym pojeździe muszą być lusterka boczne. Aby stworzyć lusterko, wykorzystano plane, czyli płaski kwadrat, który następnie umieszczono pod karoserią drzwi i użyto narzędzia Extrude. Dzięki możliwości przesuwania vertexów oraz skalowania, twórca jest w stanie uzyskać kształt lusterka, który w głównej mierze przypomina prawdzwe lusterko sportowego samochodu.
+\indent W każdym pojeździe muszą być lusterka boczne. Aby stworzyć lusterko, wykorzystano plane, czyli płaski kwadrat, który następnie umieszczono pod karoserią drzwi i użyto narzędzia Extrude. Dzięki możliwości przesuwania vertexów oraz skalowania, twórca jest w stanie uzyskać kształt lusterka, który w głównej mierze przypomina prawdziwe lusterko sportowego samochodu.
 
 \begin{figure}[!hbt]
 \setcaptionwidth{1\linewidth}
@@ -213,7 +211,7 @@ Wybierając co drugą ścianę felgi, uzyskano 8 elementów, które za pomocą E
 \newpage
 \section{Środowisko Unity}
 %%%%%%
-\indent Obiekty stworzone w Blenderze, zostały wyeksportowane jako plik typu fbx, który idealnie przechowuje dane obiektu, takie jak siatka meshowa, materiały nałożone na obiekt, oraz animacje. Niestety skala obiektów nie jest zachowana, a modele posiadają skalę 100 jednostek Unity. Aby przeszkody nie wisiały w powietrzu, została stworzona płaska powierzchnia o rozmiarach 15x3x1000 jednostek Unity. Następnie umieszczono wszystkie obiekty w scenie. Korzystając z zawartych w programie komponentów nadano każdemu modelowi komponent Mesh Collider, który odpowiada za wykrywanie kolizji z innymi obiektami, oraz Rigidbody będący głównym elementem fizyki obiektów. Aby obiekty posiadały rozsądne rozmiary, zostały zmodyfikowane ich gabaryty. Następnie zmodyfikowano ich masy w komponencie RigidBody tak, aby pojazd się od nich odbijał. Po dokonaniu zmian zostały stworzone prefaby. Prefabem nazywany jest ten sam obiekt, który po ponownym umieszczeniu w scenie posiada te same właściwości. Dodatkowo gotowe prefaby można używać w późniejszych etapach, przykładowo losowo generowany poziom, który w wyznaczonych miejscach ustawia losowy obiekt. Na potrzeby tego projektu stworzono gotowe poziomy, ze względu na aktualny stan oraz komplikacje związane z rozmiarem projektu. Ustawiając obiekty na powierzchni, stworzono 5 różnych poziomów, które różnią się trudnością, odpowiednio od pierwszego do piątego. Każdy z nich jest bardziej skomplikowany. 
+\indent Obiekty stworzone w Blenderze, zostały wyeksportowane jako plik typu fbx, który idealnie przechowuje dane obiektu, takie jak siatka meshowa, materiały nałożone na obiekt, oraz animacje. Niestety skala obiektów nie jest zachowana, a modele posiadają skalę 100 jednostek Unity. Aby przeszkody nie wisiały w powietrzu, została stworzona płaska powierzchnia o rozmiarach 15x3x1000 jednostek Unity. Następnie umieszczono wszystkie obiekty w scenie. Korzystając z zawartych w programie komponentów nadano każdemu modelowi komponent Mesh Collider, który odpowiada za wykrywanie kolizji z innymi obiektami, oraz Rigidbody będący głównym elementem fizyki obiektów. Aby obiekty posiadały rozsądne rozmiary, zostały zmodyfikowane ich gabaryty. Następnie zmodyfikowano ich masy w komponencie RigidBody tak, aby pojazd się od nich odbijał. Po dokonaniu zmian zostały stworzone prefaby. Prefabem nazywany jest ten sam obiekt, który po ponownym umieszczeniu w scenie posiada te same właściwości. Dodatkowo gotowe prefaby można używać w późniejszych etapach, przykładowo losowo generowany poziom, który w wyznaczonych miejscach ustawia losowy obiekt. Ustawiając obiekty na powierzchni, stworzono 5 różnych poziomów, które różnią się trudnością, odpowiednio od pierwszego do piątego. Każdy z nich zawiera różną liczbę przeszkód ustawionych w innych miejscach. 
 
 
 \newpage
@@ -260,7 +258,7 @@ Wybierając co drugą ścianę felgi, uzyskano 8 elementów, które za pomocą E
 \setcaptionwidth{1\linewidth}
 \centering
   \includegraphics[width=1\linewidth]{slippermat.png}
-  \caption{Materiał SlipperMat, który został dodany na powierzchnię planszy}\label{rys_19}
+  \caption{Materiał SlipperMat, który został dodany na powierzchnię planszy.}\label{rys_19}
   \begin{minipage}[t]{0.75\linewidth}
     \emph{Źródło: Opracowanie własne}
   \end{minipage}
@@ -286,7 +284,7 @@ Wybierając co drugą ścianę felgi, uzyskano 8 elementów, które za pomocą E
 \section{Programowanie skryptów}
 %%%%%%
 \subsection{Poruszanie pojazdem}
-\indent Programowanie zaczęto od stworzenia skryptu obsługującego poruszanie się pojazdem. Aby obiekt się poruszał, wykorzystano komponent Rigidbody umieszczony na samochodzie. Korzystając z gotowych funkcji zawartch w Rigidbody, mianowicie \textit{AddForce()}, można sprawić aby obiekt poruszał się w danym kierunku z określoną mocą. 
+\indent Programowanie zaczęto od stworzenia skryptu obsługującego poruszanie się pojazdem. Aby obiekt się poruszał, wykorzystano komponent Rigidbody umieszczony na samochodzie. Korzystając z gotowych funkcji zawartch w Rigidbody, mianowicie \textit{AddForce()}, można sprawić aby obiekt poruszał się w danym kierunku osi X, Y oraz Z, z określoną mocą zakodowaną w zmiennej \textit{sidewayForce}.
 
 \begin{figure}[!h]
 \setcaptionwidth{0.75\linewidth}
@@ -299,9 +297,9 @@ Wybierając co drugą ścianę felgi, uzyskano 8 elementów, które za pomocą E
 \end{figure}
 
 \newpage
-\indent Ponieważ nie każdy komputer posiada taką samą prędkość liczenia klatek, do zmiennej określającej prędkość pojazdu dodano \textit{Time.deltaTime}. Wartość ta, określa czas pomiędzy klatkami, które uzyskuje komputer. Dzięki takiemu rozwiązaniu, rozgrywka będzie wyglądać tak samo na komputerze z tego roku jak i na komputera z przed dekady. \cite{4} Ponieważ na pojazd, został nałożony komponent RigidBody, obiekt posiada swoją masę. RigidBody jako komponent określający fizykę, oblicza zachowanie każdego obiektu w sposób przypominający w dużym stopniu prawdziwe prawa fizyki. Na każdy obiekt działa siła przyciągania ziemskiego zwiększona o masę. Takie rozwiązanie wpływa negatywnie na pojazd podczas ruchu w przód oraz skręcania. Zdecydowano dodać czwartą zmienną. \textit{ForceMode.VelocityChange} dodaje natychmiastową zmianę prędkości ciału, pomijając z obliczeń jego masę. Rozwiązanie to przydaje się w przypadku, kiedy na scenie znajduje się wiele obiektów, które poruszają się z tą samą prędkością, ale posiadają inne rozmiary i masy. Okazałoby się, że przykładowy rower, który jedzie z prędkością np. 50 km/h będzie jechał szybciej od dużej ciężarówki, która również porusza się z taką samą prędkością. \cite{5}
+\indent Ponieważ nie każdy komputer posiada taką samą prędkość liczenia klatek, do zmiennej określającej prędkość pojazdu dodano \textit{Time.del\-taTime}. Wartość ta, określa czas pomiędzy klatkami, które uzyskuje komputer. Dzięki takiemu rozwiązaniu, rozgrywka będzie wyglądać tak samo na komputerze z tego roku jak i na komputera z przed dekady \cite{4}. Ponieważ na pojazd, został nałożony komponent RigidBody, obiekt posiada swoją masę. RigidBody jako komponent określający fizykę, oblicza zachowanie każdego obiektu w sposób przypominający w dużym stopniu prawdziwe prawa fizyki. Na każdy obiekt działa siła przyciągania ziemskiego zwiększona o masę. Takie rozwiązanie wpływa negatywnie na pojazd podczas ruchu w przód oraz skręcania. Zdecydowano dodać czwartą zmienną. \textit{ForceMode.VelocityChange} dodaje natychmiastową zmianę prędkości ciału, pomijając z obliczeń jego masę. Rozwiązanie to przydaje się w przypadku, kiedy na scenie znajduje się wiele obiektów, które poruszają się z tą samą prędkością, ale posiadają inne rozmiary i masy. Okazałoby się, że przykładowy rower, który jedzie z prędkością np. 50 km/h będzie jechał szybciej od dużej ciężarówki, która również porusza się z taką samą prędkością \cite{5}.
 
-\indent FindObjectOfType służy do przeszukuwania katalogów gry pod względem tego co zostało napisane w nawiasach ostrokątnych. Ponieważ w skrypcie GameManager została napisana funkcja \textit{EndGame()} FindObjectOfType szuka GameManagera, aby następnie uzyskać dostęp do funkcji, która musi być ustawiona na public, inaczej nie zostanie uruchomiona, a Unity pokaże błąd.
+\indent \textit{FindObjectOfType} służy do przeszukuwania katalogów gry pod względem tego co zostało napisane w nawiasach ostrokątnych. Ponieważ w skrypcie GameManager została napisana funkcja \textit{EndGame()} FindObjectOfType szuka GameManagera, aby następnie uzyskać dostęp do funkcji, która musi być ustawiona na public, inaczej nie zostanie uruchomiona, a Unity pokaże błąd.
 
 \begin{figure}[!h]
 \setcaptionwidth{0.75\linewidth}
@@ -326,7 +324,7 @@ Wybierając co drugą ścianę felgi, uzyskano 8 elementów, które za pomocą E
 \end{figure}
 \newpage
 \subsection{Obsługa kolizji}
-\indent Kolejnym zadaniem było napisanie skryptu, który będzie wykrywał kolizje z przeszkodami oraz resetował poziom, jeżeli pojazd spadnie z planszy. Ponieważ platforma po której porusza się pojazd, również jest wykrywana jako kolizja, wszystkie przeszkody zostały otagowane jako ,,Obstacle''. W skrypcie PlayerMovement został dodany kod obsługujący resetowanie poziomu, jeżeli wartość y pojazdu spadnie poniżej -1, który odwołuje się do funkcji \textit{EndGame()} w skrypcie GameManager.
+\indent Kolejnym zadaniem było napisanie skryptu, który będzie wykrywał kolizje z przeszkodami oraz resetował poziom, jeżeli pojazd spadnie z planszy. Ponieważ platforma po której porusza się pojazd, również jest wykrywana jako kolizja, wszystkie przeszkody zostały otagowane jako ,,Obstacle''. W skrypcie PlayerMovement został dodany kod obsługujący resetowanie poziomu, jeżeli wartość ,,y'' pojazdu spadnie poniżej -1, który odwołuje się do funkcji \textit{EndGame()} w skrypcie GameManager.
 
 \begin{figure}[!hbt]
 \setcaptionwidth{0.75\linewidth}
@@ -349,10 +347,10 @@ Wybierając co drugą ścianę felgi, uzyskano 8 elementów, które za pomocą E
   \end{minipage}
 \end{figure}
 
-\indent Ponieważ w inspektorze nie da się podpiąć skryptu GameManager do prefabu pojazdu, w skrypcie PlayerCollision znajduje się metoda \textit{FindObjectOfType} która przeszukuje w lokalizacji skryptów plik o nazwie GameManager a następnie korzysta z jego funkcji która musi być ustawiona jako publiczna. Stworzono typ logiczny bool gameHasEnded, który przybiera dwie wartości, prawda lub fałsz, którego wartość zmieniana jest przy pierwszym uruchomieniu funkcji, aby upewnić się, że funkcja będzie ładowana tylko jeden raz. Następnie po upadku, bądź kolizji, poziom jest ładowany od nowa, tak więc gameHasEnded ma swoją pierwotną wartość. 
+\indent Ponieważ w inspektorze nie da się podpiąć skryptu GameManager do prefabu pojazdu, w skrypcie PlayerCollision znajduje się metoda \textit{FindObjectOfType} która przeszukuje w lokalizacji skryptów plik o nazwie GameManager a następnie korzysta z jego funkcji która musi być ustawiona jako publiczna. Stworzono typ logiczny bool \textit{gameHasEnded}, który przybiera dwie wartości, prawda lub fałsz, którego wartość zmieniana jest przy pierwszym uruchomieniu funkcji, aby upewnić się, że funkcja będzie ładowana tylko jeden raz. Następnie po upadku, bądź kolizji, poziom jest ładowany od nowa, tak więc \textit{gameHasEnded} ma swoją pierwotną wartość. 
 
 \newpage
-\indent Aby gra nie resetowała się za szybko, zamiast uruchamiać funkcję \textit{EndGame()} od razu, wykorzystano metodę \textit{Invoke} która po dodaniu nazwy funkcji, oraz czasu w sekundach, uruchamia funkcję w określonym przez twórce czasie. Aby przejść na następny poziom, gracz musi przejechać pomiędzy przeszkodami tak żeby ich nie dotknąć. W przypadku porażki poziom zostanie załadowany od nowa.
+\indent Aby gra nie resetowała się za szybko, zamiast uruchamiać funkcję \textit{EndGame()} od razu, wykorzystano metodę \textit{Invoke} która po dodaniu nazwy funkcji, oraz czasu w sekundach, uruchamia funkcję w określonym przez twórce czasie. Została stworzona zmienna restartDelay, którą twórca może modyfikować z okna Inspektora. Aby przejść na następny poziom, gracz musi przejechać pomiędzy przeszkodami tak żeby ich nie dotknąć. W przypadku porażki poziom zostanie załadowany od nowa.
 
 \begin{figure}[!hbt]
 \setcaptionwidth{0.75\linewidth}
@@ -367,7 +365,7 @@ Wybierając co drugą ścianę felgi, uzyskano 8 elementów, które za pomocą E
 
 \newpage
 \subsection{Ładowanie poziomów}
-\indent Poziom jest już możliwy do przejścia, jednakże trzeba załadować kolejny. Na końcu trasy każdego z poziomów umieszczono kostkę o szerokości 15 jednostek Unity, która jest niewidoczna i służy jako przełącznik uruchamiający animację zakończonego poziomu, oraz ładuje kolejny. W skrypcie EndTrigger znajduje się jedna funkcja \textit{OnTriggerEnter()}, która ładuje funkcję \textit{CompleteLevel()} ze skryptu GameManager odpowiedzialną za włączenie animacji zakończenia poziomu.
+\indent Poziom jest już możliwy do przejścia, jednakże trzeba załadować kolejny. Na końcu trasy każdego z poziomów umieszczono kostkę o szerokości 15 jednostek Unity, która jest niewidoczna i służy jako przełącznik uruchamiający animację zakończonego poziomu, oraz ładuje kolejny. W skrypcie EndTrigger znajduje się jedna funkcja \textit{OnTriggerEnter()}, która ładuje funkcję \textit{CompleteLevel()} ze skryptu GameManager odpowiedzialną za włączenie animacji zakończenia poziomu. \textit{gameCompleteUI} włącza animację, która z poziomu Unity została manualnie wyłączona, ponieważ podczas działania programu, gracz nie widziałby planszy, tylko animację.
 
 \begin{figure}[!ht]
 \setcaptionwidth{0.75\linewidth}
@@ -394,7 +392,7 @@ Wybierając co drugą ścianę felgi, uzyskano 8 elementów, które za pomocą E
 \begin{figure}[!h]
 \setcaptionwidth{0.75\linewidth}
 \centering
-  \includegraphics[width=.8\linewidth]{build.png}
+  \includegraphics[width=0.9\linewidth]{build.png}
   \caption{Okno Build pozwalające określić kolejność poziomów.}\label{rys_29}
   \begin{minipage}[t]{0.75\linewidth}
     \emph{Źródło: Opracowanie własne}
